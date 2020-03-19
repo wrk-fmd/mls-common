@@ -16,6 +16,7 @@
     <name>MLS parent module</name>
 
     <properties>
+        <mls.common.version>3.0.0-RELEASE</mls.common.version>
         <mls.auth.version>3.0.0-RELEASE</mls.auth.version>
         <mls.replay.version>3.0.1-RELEASE</mls.replay.version>
         <mls.geocoding.version>3.0.0-RELEASE</mls.geocoding.version>
