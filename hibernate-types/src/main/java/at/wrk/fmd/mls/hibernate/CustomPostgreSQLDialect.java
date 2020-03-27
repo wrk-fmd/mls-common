@@ -11,10 +11,10 @@ public class CustomPostgreSQLDialect extends PostgreSQL10Dialect {
 
     public CustomPostgreSQLDialect() {
         super();
-        this.registerColumnType(Types.JAVA_OBJECT, "json");
-        this.registerColumnType(Types.JAVA_OBJECT, "jsonb");
-        this.registerHibernateType(Types.JAVA_OBJECT, "json");
-        this.registerHibernateType(Types.JAVA_OBJECT, "jsonb");
+        this.registerColumnType(Types.OTHER, "json");
+        this.registerColumnType(Types.OTHER, "jsonb");
+        this.registerHibernateType(Types.OTHER, "json");
+        this.registerHibernateType(Types.OTHER, "jsonb");
     }
 
     @Override
