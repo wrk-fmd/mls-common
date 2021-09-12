@@ -122,6 +122,8 @@
                 </executions>
             </plugin>
 
+            <!--
+            TODO Causes some problems with lombok, try to activate again later (there's currently not much JavaDoc anyway)
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -138,6 +140,7 @@
                     </execution>
                 </executions>
             </plugin>
+            !-->
         </plugins>
     </build>
 
