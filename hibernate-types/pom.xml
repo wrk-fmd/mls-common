@@ -7,10 +7,11 @@
     <parent>
         <groupId>at.wrk.fmd.mls</groupId>
         <artifactId>mls-parent</artifactId>
-        <version>3.0.0-RELEASE</version>
+        <version>3.0.3-RELEASE</version>
     </parent>
 
     <artifactId>hibernate-types</artifactId>
+    <version>3.0.0-RELEASE</version>
     <name>MLS Hibernate types</name>
     <description>Custom Hibernate types used throughout the MLS</description>
 
@@ -38,11 +39,4 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>bintray-wrk-fmd</id>
-            <url>http://dl.bintray.com/wrk-fmd/mls-ecosystem</url>
-        </repository>
-    </repositories>
 </project>
