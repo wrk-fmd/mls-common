@@ -17,7 +17,7 @@
 
     <repositories>
         <repository>
-            <id>github-mls-packages</id>
+            <id>github</id>
             <url>https://maven.pkg.github.com/wrk-fmd/mls-packages</url>
             <snapshots>
                 <enabled>true</enabled>
