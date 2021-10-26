@@ -1,0 +1,38 @@
+name: Deploy mls-parent Maven artifact
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/maven-deploy-parent.yml
+      - parent/**
+
+defaults:
+  run:
+    working-directory: parent
+
+jobs:
+  artifact:
+    name: Deploy to GitHub Packages
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: 11
+          distribution: adopt
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('parent/**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Publish artifact
+        run: mvn -B clean deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

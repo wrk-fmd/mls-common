@@ -146,8 +146,9 @@
 
     <distributionManagement>
         <repository>
-            <id>mvn-proxy</id>
-            <url>http://localhost:8000</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/wrk-fmd/mls-packages</url>
         </repository>
     </distributionManagement>
 </project>
