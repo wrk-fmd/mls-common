@@ -1,4 +1,4 @@
-name: Deploy mls-parent Maven artifact
+name: Deploy hibernate-types Maven artifact
 
 on:
   push:
@@ -6,13 +6,13 @@ on:
       - master
       - dev
     paths:
-      - .github/workflows/maven-deploy-parent.yml
-      - parent/**
+      - .github/workflows/maven-deploy-hibernate-types.yml
+      - hibernate-types/**
 
 jobs:
   deploy:
     uses: wrk-fmd/mls-packages/.github/workflows/maven-deploy.yml@main
     with:
-      directory: parent
+      directory: hibernate-types
     secrets:
       token: ${{ secrets.MLS_PACKAGES_TOKEN }}

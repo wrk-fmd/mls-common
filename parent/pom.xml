@@ -11,12 +11,12 @@
 
     <groupId>at.wrk.fmd.mls</groupId>
     <artifactId>mls-parent</artifactId>
-    <version>3.0.3</version>
+    <version>3.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>MLS parent module</name>
 
     <properties>
-        <mls.common.version>3.0.0-RELEASE</mls.common.version>
+        <mls.common.version>3.0.0-SNAPSHOT</mls.common.version>
         <mls.auth.version>3.0.1-RELEASE</mls.auth.version>
         <mls.amqp.version>3.0.3-RELEASE</mls.amqp.version>
         <mls.coceso.version>3.0.0-SNAPSHOT</mls.coceso.version>
