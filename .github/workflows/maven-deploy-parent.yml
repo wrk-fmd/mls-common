@@ -13,26 +13,9 @@ defaults:
     working-directory: parent
 
 jobs:
-  artifact:
-    name: Deploy to GitHub Packages
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Java
-        uses: actions/setup-java@v2
-        with:
-          java-version: 11
-          distribution: adopt
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('parent/**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
-
-      - name: Publish artifact
-        run: mvn -B clean deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.MLS_PACKAGES_TOKEN }}
+  deploy:
+    uses: wrk-fmd/mls-packages/.github/workflows/maven-deploy.yml@main
+    with:
+      directory: parent
+    secrets:
+      token: ${{ secrets.MLS_PACKAGES_TOKEN }}
