@@ -35,4 +35,4 @@ jobs:
       - name: Publish artifact
         run: mvn -B clean deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MLS_PACKAGES_TOKEN }}
