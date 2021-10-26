@@ -15,6 +15,16 @@
     <name>MLS Hibernate types</name>
     <description>Custom Hibernate types used throughout the MLS</description>
 
+    <repositories>
+        <repository>
+            <id>github-mls-packages</id>
+            <url>https://maven.pkg.github.com/wrk-fmd/mls-packages</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <!-- Spring Boot -->
         <dependency>
