@@ -21,7 +21,7 @@
         <mls.amqp.version>3.0.3-SNAPSHOT</mls.amqp.version>
         <mls.coceso.version>3.0.0-SNAPSHOT</mls.coceso.version>
         <mls.geocoding.version>3.0.0-SNAPSHOT</mls.geocoding.version>
-        <mls.message.version>3.0.0-SNAPSHOT</mls.message.version>
+        <mls.message.version>3.0.3-SNAPSHOT</mls.message.version>
 
         <spring.boot.version>2.5.6</spring.boot.version>
         <commons.text.version>1.9</commons.text.version>
