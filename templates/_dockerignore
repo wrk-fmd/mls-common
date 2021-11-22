@@ -37,6 +37,9 @@
 # ignore private maven cache
 **/.m2
 
+# ignore Python cache
+**/__pycache__
+
 ##############################################
 ### Additionally ignore some tracked files ###
 ##############################################
